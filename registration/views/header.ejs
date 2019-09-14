@@ -1,0 +1,9 @@
+<% if(user) { %>
+    <%= user.email %>
+    <a href="/logout">Logout</a>
+<% } else { %>
+    <a href="/users/register">Register</a>
+    <a href="/users/login">Login</a>
+<% } %>
+
+
