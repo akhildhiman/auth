@@ -1,0 +1,75 @@
+
+  371  gcc
+  372  gcc -v
+  373  ls
+  374  mkdir projects
+  375  cd proects
+  376  cd projects
+  377  mkdir helloworld
+  378  cd helloworld
+  379  code .
+  380  sudo pacman build-essential gdb
+  381  sudo pacman install build-essential gdb
+  382  -h
+  383  sudo pacman build-essential gdb
+  384  -h
+  385  gdb
+  386  gdb -help
+  387  sudo pacman -S build-essential gdb
+  388  sudo pacman -S gdb
+  389  ls
+  390  git clone https://aur.archlinux.org/snapd.git
+  391   cd snapd
+  392  makepkg -si
+  393  history
+  394  makepkg -si
+  395  git clone https://aur.archlinux.org/snapd.git
+  396   cd snapd
+  397  makepkg -si
+  398  sudo systemctl enable --now snapd.socket
+  399  sudo ln -s /var/lib/snapd/snap /snap
+  400  sudo snap install hello-world
+  401  sudo snap install hello-world
+  402  sudo fdisk -l
+  403  fdisk /dev/sda
+  404  fdisk /dev/sda
+  405  sudo fdisk /dev/sda
+  406  sudo mkinitcpio -p linux
+  407  sudo grub-mkconfig -o /boot/grub/grub.cfg
+  408  sudo -s
+  409  sudo pacman -Sy gparted
+  410  sudo pacman -S bluez
+  411  sudo pacman -S bluez-utils
+  412  sudo pacman -S blueman
+  413  lsmod | grep btusb
+  414  sudo vim /etc/bluetooth/main.conf
+  415  sudo nano /etc/bluetooth/main.conf
+  416  sudo systemctl start bluetooth.service
+  417  sudo systemctl enable bluetooth.service
+  418  https://github.com/kritika20sharma/Hacktoberfest-2020-codes.git
+  419  git checkout -b new_branch
+  420  ls Documents/
+  421  git clone https://github.com/kritika20sharma/pullMeProperly.git
+  422  cd 
+  423  cd Documents/
+  424  ls
+  425  cd
+  426  cd pullMeProperly/
+  427  git checkout -v
+  428  git checkout -b hack
+  429  touch codetech.cpp
+import pyttsx3
+import PyPDF2
+book = open('oop.pdf', 'rb')
+pdfReader = PyPDF2.PdfFileReader(book)
+pages = pdfReader.numPages
+
+speaker = pyttsx3.init()
+for num in range(7, pages):
+    page = pdfReader.getPage(num)
+    text = page.extractText()
+    speaker.say(text)
+    speaker.runAndWait()
+
+
+#refer this vid , to add ur book pdf " https://www.youtube.com/watch?v=kyZ_5cvrXJI "
